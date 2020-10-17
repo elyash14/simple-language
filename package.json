@@ -1,0 +1,15 @@
+{
+  "name": "simple-language",
+  "version": "1.0.0",
+  "description": "This is a example of simple language with the lexer, the parser, and some rules to evaluate our language",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run build && node index.js",
+    "build": "nearleyc ./grammars/grammar.ne -o grammar.js"
+  },
+  "author": "Elyas Mosayebi",
+  "license": "ISC",
+  "dependencies": {
+    "nearley": "^2.19.7"
+  }
+}
